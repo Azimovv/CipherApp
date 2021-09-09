@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}
+    Home Page
+{% endblock %}
+{% block content %}
+    <h1>Ciphers</h1>
+    <ul>
+        <li>
+            <p><a href='{{ url_for('caesar') }}'>Caesar Cipher</a></p>
+            <p>The caesar cipher is one of the simplest encryption methods known.
+            It is a substitution cipher where each letter is shifted a certain amount
+            down the alphabet or a set of symbols and then replaced. The amount that
+            it is shifted can be known as the 'key' which can also be used to decrypt it.
+            However because of its simplicity it can also easily be brute forced without
+            the need for the key.
+            The specific symbol set used for this program is:
+            'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 !?.`~@#$%^&*()_+-=[]{}|;:<>,/'</p>
+        </li>
+    </ul>
+{% endblock %}

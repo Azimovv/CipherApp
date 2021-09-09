@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}
+    Caesar Cipher
+{% endblock %}
+
+{% block content %}
+    <h1>Caesar Cipher</h1>
+    <form action="#" method="post">
+        <p>Enter text and select an option: </p>
+        <p><input type="text" name="nm" /></p>
+        <p>
+            <input type="submit" name="submit_button" value="Encrypt" />
+            <input type="submit" name="submit_button" value="Decrypt" />
+        </p>
+    </form>
+{% endblock %}
